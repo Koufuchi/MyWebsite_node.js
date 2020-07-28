@@ -74,3 +74,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// 啟動伺服器
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Express is listening on localhost:${port}`)
+})
