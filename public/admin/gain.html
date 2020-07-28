@@ -1,0 +1,30 @@
+<div class="title">
+    <h4>成果展示管理</h4>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gain-modal">
+        新增
+    </button>
+</div>
+<div class="row text-center" id="gain-content">
+</div>
+<div class="modal fade" id="gain-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">新增成果</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid img-thumbnail" src="/images/sample/preview.png" id="preview_img">
+                <input id="gain_img_file" type="file">
+                <input type="text" class="form-control" id="insert_title" placeholder="成果標題" />
+                <textarea class="form-control" rows="5" id="insert_content" placeholder="成果說明...">                     </textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary" onclick="gainInsert()" data-dismiss="modal"> 新增</button>
+            </div>
+        </div>
+    </div>
+</div>

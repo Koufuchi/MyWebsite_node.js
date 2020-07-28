@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>我的個人網站</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">高宏安</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#result">成果展示</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#member">團隊成員</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#active">活動紀錄</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">聯絡我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="admin/index.html">後台</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- 輪播圖 -->
+  <nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" id="carousel-li">       <!-- 切換輪播圖的底部按鈕選單 -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      </ol>
+      <div class="carousel-inner" id="carousel-row">          <!-- 生成圖片用 -->
+        <div class="carousel-item active" id="carousel-img0"> <!-- 第一張照片 -->
+          <div class="carousel-caption d-none d-md-block">
+            <h3 id="carousel-title0"></h3>                    <!-- 第一個圖片標題 -->
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>                  <!-- 上一張 -->
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>                      <!-- 下一張 -->
+      </a>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-center">關於我(點選圖片看更多)</h2>
+        <br>
+        <div class="row">
+          <div class="col">
+            <a href="owner.html"><img class="rounded-circle img-fluid d-block mx-auto" src="../images/sample/owner_icon.png"></a>
+            <br>
+            <h4 class="text-center">基本資料</h4>
+          </div>
+          <div class="col">
+            <a href="business.html"><img class="rounded-circle img-fluid d-block mx-auto" src="../images/sample/business_icon.png"></a>
+            <br>
+            <h4 class="text-center">技能</h4>
+          </div>
+          <div class="col">
+            <a href="environment.html"><img class="rounded-circle img-fluid d-block mx-auto" src="../images/sample/environment_icon.jpg"></a>
+            <br>
+            <h4 class="text-center">環境</h4>
+          </div>
+          <div class="col">
+            <a href="skill.html"><img class="rounded-circle img-fluid d-block mx-auto" src="../images/sample/skill_icon.png"></a>
+            <br>
+            <h4 class="text-center">作品集</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="result" class="bg-light">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-center">成果展示</h2>
+        <br>
+        <div id="gain">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="member">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center">團隊成員</h2>
+          <br>
+          <div id="team" class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="active" class="bg-light">
+    <div class="col-lg-8 mx-auto">
+      <h2 class="text-center">活動紀錄</h2>
+      <br>
+      <div id="activity" class="row">
+
+      </div>
+      <a href="activity.html"><button type="button" class="btn btn-info btn-block">Read More</button></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center">聯絡我</h2>
+          <h4 class="text-center">若您有任何問題、建議或合作想法 ，歡迎連絡我</h4>
+          <br>
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+              <iframe width="100%" height="300px" frameborder="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57857.258645676404!2d121.58567456748868!3d24.997442801114815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aacecc399537%3A0x82bf6adf5236a52c!2zMjIy5paw5YyX5biC5rex5Z2R5Y2A!5e0!3m2!1szh-TW!2stw!4v1595657996771!5m2!1szh-TW!2stw"></iframe>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <p>&#9962; <span id="address"></span></p>
+              <p>&#128222; <span id="phone"></span></p>
+              <p>&#x1F4E7; <span id="email"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-danger">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 高宏安</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <script src="js/front-side.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<div class="title">
+    <h4>首頁輪播圖</h4>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carousel-modal">
+        新增
+    </button>
+</div>
+<div class="row text-center" id="carousel-content">
+</div>
+<div class="modal fade" id="carousel-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">新增輪播圖</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid img-thumbnail" src="/images/sample/preview.png" id="preview_img">
+                <input id="carousel_img_file" type="file">
+                <input type="text" class="form-control" id="insert_title" placeholder="標題" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary" onclick="carouselInsert()" data-dismiss="modal"> 新增</button>
+            </div>
+        </div>
+    </div>
+</div>

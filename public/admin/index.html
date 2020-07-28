@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>我的個人網站(後台)</title>
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sb-admin.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-dark bg-dark static-top">
+        <a class="navbar-brand text-white">網站管理</a>
+        <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-nav px-3 ml-auto">
+            <li class="nav-item text-nowrap" onclick="logout()">
+                <a class="nav-link" href="../../index.html">登出</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <ul class="sidebar navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="user">
+                    <i class="far fa-address-card"></i>
+                    <span>使用者資訊</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="carousel">
+                    <i class="fas fa-image"></i>
+                    <span>輪播圖</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown">
+                    <i class="fas fa-cubes"></i>
+                    <span>關於我</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" id="owner">基本資料</a>
+                    <a class="dropdown-item" id="business">技能</a>
+                    <a class="dropdown-item" id="environment">作品</a>
+                    <a class="dropdown-item" id="skill">作品集</a>
+                </div>            
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="gain">
+                    <i class="fas fa-code"></i>
+                    <span>成果展示</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="team">
+                    <i class="fas fa-user-friends"></i>
+                    <span>團隊成員</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="activity">
+                    <i class="far fa-newspaper"></i>
+                    <span>活動紀錄</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact">
+                    <i class="far fa-comment-alt"></i>
+                    <span>聯絡我們</span>
+                </a>
+            </li>
+            
+        </ul>
+        <div id="content-wrapper">
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">登入</h5>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="username" placeholder="使用者名稱" />
+                    <input type="password" class="form-control" id="password" placeholder="密碼" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="login()">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/sb-admin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="../js/administration.js"></script>
+</body>
+
+</html>

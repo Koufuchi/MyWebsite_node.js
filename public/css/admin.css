@@ -1,0 +1,36 @@
+
+@media (min-width: 768px) {
+  .title{
+    padding: .5rem 1rem;
+    display: flex;
+  }
+  .fa{
+    color: white;
+  }
+  label{
+    color:white;
+  }
+  .content{
+    flex-direction: column;
+    padding: .5rem 1rem;
+  }
+  .btn{
+    flex-direction: row
+  }
+  .my-img{
+    max-height: 250px;
+    /*min-height: 250px;*/
+  }
+  #preview_img{
+    display: block;
+    margin: auto;
+  }
+  #owner_img{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+  }
+  .row{
+    margin: 0;
+  }
+}
