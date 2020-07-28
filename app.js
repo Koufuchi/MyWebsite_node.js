@@ -6,7 +6,11 @@ var logger = require('morgan');
 var session = require('express-session');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/website', { useNewUrlParser: true });
+//mongoose.connect('mongodb://localhost:27017/website', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/todo', {
+  useNewUrlParser: true,
+  useCreateIndex: true
+})
 
 
 var indexRouter = require('./routes/index');
