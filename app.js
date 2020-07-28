@@ -6,11 +6,8 @@ var logger = require('morgan');
 var session = require('express-session');
 
 var mongoose = require('mongoose');
-//mongoose.connect('mongodb://localhost:27017/website', { useNewUrlParser: true });
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/todo', {
-  useNewUrlParser: true,
-  useCreateIndex: true
-})
+mongoose.connect('mongodb://localhost:27017/website', { useNewUrlParser: true });
+
 
 
 var indexRouter = require('./routes/index');
@@ -75,7 +72,4 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-// 啟動伺服器
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Express is listening on localhost:${port}`)
-})
+
